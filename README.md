@@ -1,2 +1,4 @@
 # rock-paper-scissors
 VHDL model for implementation on a Digilent Basys 3 Artix-7 development board. The letters 'r', 'P', and 'S' are cycled through at a rapid speed on the first 7-segment. The user can press BTNL, BTNC, or BTNR to signify 'rock', 'paper', or 'scissors', respectively. The second 7-segment will display the user selection ('r', 'P', or 'S') when one of those buttons are pressed and held. The first 7-segment will pause on its current state when one of the buttons are pressed and held. If the user's value is greater than the first 7-segment value, then the user wins and LD1 turns on; otherwise, LD0 turns on. After a button has been pressed and released, the game returns to its original state.
+
+_The browthom/vhdl-user-component-dir repository must be imported into the Vivado project as a directory. This is done so that the top_level.vhd file can properly instantiate all components listed in its vhdl model._
